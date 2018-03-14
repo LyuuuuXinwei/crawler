@@ -44,3 +44,6 @@ selenium单元测试
 tesseract图片处理验证码
 虚拟IP技术：通过Tor代理服务器获取匿名IP+pysocks：python代理服务器通信模块
 XPATH？
+scrapy
+URLerror
+异常处理

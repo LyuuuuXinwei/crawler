@@ -27,6 +27,11 @@ params={'username':'Ryan','password':'password'}
 r=requests.post("http://pythonscraping.com/pages/cookies/welcome.php", params) #1.post-传表单
 print(r.cookies.get_dict())
 r = requests.get("http://pythonscraping.com/pages/cookies/profile.php",cookies=r.cookies) #2.get-得cookies传cookies
+'''
+get()还有个参数是params,这样的URL：http://music.163.com/#/discover/artist/cat?id=4003&initial=71传的方法是：
+params = {'id': group_id, 'initial': initial}
+r = requests.get('http://music.163.com/discover/artist/cat', params=params)
+    '''
 print(r.text)
 
 #不需要cookies可以用session，会话对象持续跟踪
